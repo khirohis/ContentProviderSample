@@ -7,6 +7,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
         <activity
             android:name=".ItemListActivity"
             android:label="@string/app_name" >
@@ -16,6 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".ItemDetailActivity"
             android:label="@string/title_item_detail"
@@ -26,7 +28,7 @@
         </activity>
 
         <provider
-            android:name="net.hogelab.android.contentprovidersample.provider.ItemProvider"
+            android:name=".provider.ItemsProvider"
             android:authorities="net.hogelab.android.contentprovidersample.provider"
             android:exported="false" />
     </application>
