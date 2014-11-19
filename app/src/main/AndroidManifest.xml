@@ -24,6 +24,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ItemListActivity" />
         </activity>
+
+        <provider
+            android:name="net.hogelab.android.contentprovidersample.provider.ItemProvider"
+            android:authorities="net.hogelab.android.contentprovidersample.provider"
+            android:exported="false" />
     </application>
 
 </manifest>
